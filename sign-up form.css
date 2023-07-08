@@ -3,7 +3,7 @@
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Raleway';
 }
 body{
     background-image:  url("https://images.pexels.com/photos/949587/pexels-photo-949587.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
@@ -13,7 +13,7 @@ body{
 .content{
     display: grid;
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr 2fr;
+    grid-template-rows: 1fr;
     height: 100vh;
 }
 img {
@@ -27,10 +27,11 @@ img {
 }
 
 .prompt{
-    font-size: 18px;
+    font-size: 22px;
     font-weight:lighter;
     color:beige;
     padding:10%;
+    padding-bottom: 100%;
     margin: 0 auto;
     background-color: rgba(0,0,0, 0.5);
     text-align: center;
@@ -40,7 +41,7 @@ img {
     grid-row: 1;
     background-color: rgba(0,0,0, 0.5);
     color:beige;
-    padding-top:50px;
+    margin-top:0px;
 }
 input,
 select,
@@ -49,33 +50,35 @@ text {
   background-color: white;
   border-radius: 10px;
   padding: 2px;
+  margin:4%;
 }
 .field{
     border: none;
-    padding: 20px;
-    margin-top:20px;
+    padding: 20% 3% 3% 20%;
 }
 .click{
-    margin-left: 10px;
-    padding: 3px;
+    margin-left: 30%;
+    padding:2%;
     border-radius: 20px;
+    background-color:rgb(239, 206, 146);
 }
 button:hover{
     transform: scale(1.1);
 }
 button:active{
-    background-color: azure;
+    background-color: pink;
 }
 
 .foot{
-    padding-top: 20%;
-    text-align:center;
+    padding-top: 10%;
+    text-align: center;
 }
-
-
+.foot a{
+    text-decoration: none;
+}
 #log-in{
-    color: darkblue
+    color: rgb(244, 91, 107);
 }
 #log-in:hover{
-    color:rgb(41, 82, 244);
+    color:gold;
 }
