@@ -6,51 +6,41 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 body{
-    background-image:  url("https://img.freepik.com/premium-vector/abstract-blue-vector-background-with-triangles_56103-550.jpg?w=740");
+    background-image:  url("https://images.pexels.com/photos/949587/pexels-photo-949587.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
     background-repeat: no-repeat;
     background-size: cover;
 }
 .content{
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 2fr;
     height: 100vh;
 }
-
-.heading{
-    grid-column: 1/2;
+img {
     grid-row: 1/2;
-    padding: 15px;
-    background-image: none;
-    font-size: 25px; color: black;
-    font-weight: bold;
+    grid-column: 1/2;
+    width: 100%;
+    padding-right: 20%;
+    padding-left: 20%;
+    padding-bottom: 10%;
+    padding-top: 10%;
+}
 
-}
-.title{
-    border-radius:10px;
-    padding: 15px;
-    border-style: double;
-    border-color:orangered;
-    color:navy;
-    font-weight: bolder;
-    background-image: none;
-    background-color: rgba(74, 170, 239, 0.196);
-}
 .prompt{
-    border-radius: 5px;
-    padding: 20px;
-    background-image: none;
     font-size: 18px;
     font-weight:lighter;
+    color:beige;
+    padding:10%;
+    margin: 0 auto;
+    background-color: rgba(0,0,0, 0.5);
+    text-align: center;
 }
 .form{
-box-sizing: border-box;
-  padding: 2rem;
-  border-radius: 1rem;
-  background-image: none;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
+    grid-column: 2;
+    grid-row: 1;
+    background-color: rgba(0,0,0, 0.5);
+    color:beige;
+    padding-top:50px;
 }
 input,
 select,
@@ -62,8 +52,8 @@ text {
 }
 .field{
     border: none;
-    padding: 10px;
-    margin-top:-10px;
+    padding: 20px;
+    margin-top:20px;
 }
 .click{
     margin-left: 10px;
@@ -78,11 +68,10 @@ button:active{
 }
 
 .foot{
-    grid-column: 2/3;
-    grid-row: 2/3;
-    background-image: none;
-    margin-left: 30px;
+    padding-top: 20%;
+    text-align:center;
 }
+
 
 #log-in{
     color: darkblue
