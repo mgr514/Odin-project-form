@@ -2,46 +2,60 @@
 <html>
 
 <head>
-    <meta name="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-up</title>
     <link rel="stylesheet" href="./sign-up form.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
-    <meta-charset:></meta-charset:>
 </head>
 
 <body>
-    <div class="content">   
-        <header class="heading">
-            <img src="./logo-no-background.svg" class="logo">
-            <p class="prompt">Come join beauty enthusiasts in a new networking experience! </p>
-        </header>
-        <div class="form">
-            <form class="sign-up">
-            <form action="" method="post">
-            <fieldset class="field">
+    <!--Left side-->
+    <header class="heading">
+        <div class="svg-container">
+            <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+                <defs>
+                <linearGradient id="gradient" gradientTransform="rotate(45)">
+                    <stop offset="0%" stop-color="#FFA500" />
+                    <stop offset="50%" stop-color="#FFD700" />
+                    <stop offset="100%" stop-color="#FFCC00" />
+                </linearGradient>
+                </defs>
+                <circle cx="100" cy="100" r="90" fill="url(#gradient)" />
+                <text x="50%" y="50%" text-anchor="middle" dominant-baseline="central" fill="#FFFFFF" font-family="Arial" font-size="80">Glow</text>
+            </svg>
+        </div>
+        <p class="prompt">Come join beauty enthusiasts in a new networking experience! </p>
+    </header>
+    <!--Right side-->
+    <form action="" method="post" class="form sign-up">
+        <fieldset class="field">
+            <div class="field-container">
                 <label for="first name">First Name:</label>
                 <input type="text" name="first name" id="first name">
-                    <br>
+            </div>
+            <div class="field-container">
                 <label for="last name" name="'last name" id="last name">Last Name:</label>
                 <input type="text" name="last name" id="last name">
-                    <br>
+            </div>
+            <div class="field-container">
                 <label for="email" name="email" id="email">Email:</label>
                 <input type="email" name="email" id="email">
-                    <br>
+            </div>
+            <div class="field-container">   
                 <label for="user-pw">Password:</label>
                 <input type="password" name="user-pw" id="user-pw" minlength="6">
-            </fieldset>
-            <button class="click" type="submit">Create Account</button>
-            <footer class="foot">
-                <p>Already have an Account?</p>
-                   <a id="log-in" href="./log-in.html">Welcome Back!</a>
-           </footer>
-        </form>
+            </div>
+            <div class="button-container">
+                <button class="click" type="submit">Create Account</button>
+            </div>
+        </fieldset>
+        <div class="form-foot">
+            <p>Already have an Account?</p>
+            <a id="log-in" href="./log-in.html">Welcome Back!</a>
         </div>
-    </div>
-
-  
+    </form>
 
 </body>
 
 </html>
+
